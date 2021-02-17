@@ -32,6 +32,8 @@ There are two user jurneys, one is the normal passenger and the other as a logge
 - yarn test
 - yarm test:watch
 ```
+##### Lorant Vajda Github Repo (Lortschi)
+[Link to Github Flight-App](https://github.com/lortschi/flight-app)
 
 
 
