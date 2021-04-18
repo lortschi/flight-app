@@ -217,9 +217,12 @@ const PassengerList = ({ passenger, flightNumber, login, adminEditPassenger }) =
 
     return (
         <React.Fragment>
-            <h1>
-                {loggedIn ? 'Admin Edit Flight' : 'Passenger Check-In'}
+            <h1 className={style.userBoardTitle}>
+                {loggedIn ? 'Admin Edit Flight' : 'Passenger\'s Check-In'}
             </h1>
+            <div className={style.userBoardSubtitle}>
+                {loggedIn ? 'As admin you are able to add new one or even edit already checked-in passengers.' : 'Please check-in as passenger to this flight.'}
+            </div>
             {loggedIn || data.length > 0 ? <MuiThemeProvider theme={getMuiTheme()}>
                 <MUIDataTable
                     className={style.MuiDatatable}

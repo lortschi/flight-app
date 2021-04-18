@@ -80,7 +80,7 @@ const login = [
 	{
 		id: 1,
 		name: 'airline@app.com',
-		password: 'test123',
+		password: 'airlineapp123*',
 		loggedIn: false
 	},
 ];

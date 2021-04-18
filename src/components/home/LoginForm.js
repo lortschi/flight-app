@@ -16,7 +16,7 @@ import style from '../../styles/main.scss';
  * Handles the admin login to the app. Possible logins are regular
  * user / password and Facebook OAuth login. To minimize the task overhead, the
  * registry section isn't exist. So just use the hardcoded user credention from
- * the database: U:airline@app.com, PW: test123
+ * the database: U:airline@app.com, PW: airlineapp123*
  * 
  * @typedef {object} Props
  * @prop {array} login
@@ -149,7 +149,9 @@ class LoginForm extends Component {
                                         />
                                     </Grid>
                                     <footer>
-                                        <div>Admin Username: airline@app.com Password: test123</div>
+                                        <div>Admin Username: airline@app.com | Password: airlineapp123*</div>
+                                        <div>- For Facebook please use the following logins in the popup -</div>
+                                        <div>Email: airline_lkwahyo_app@tfbnw.net | Password: airlineapp123*</div>
                                     </footer>     
                                 </Grid>
                             </form>   

@@ -7,6 +7,11 @@ const devMode = process.env.NODE_ENV !== 'production';
 var server_port = process.env.PORT || 8080;
 
 module.exports = {
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
